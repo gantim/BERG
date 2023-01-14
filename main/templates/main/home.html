@@ -1,0 +1,10 @@
+{% extends 'main/mainpage.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+    <div class="wrapper">
+    <img class="home_img" src="/media/home/Без_имени-11.png" alt="homepage_img">
+        {{ homepage.text|safe }}
+
+    </div>
+{% endblock %}

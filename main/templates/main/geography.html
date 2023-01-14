@@ -1,0 +1,14 @@
+{% extends 'main/mainpage.html' %}
+{% load static %}
+{% block title %}География{% endblock %}
+{% block content %}
+
+
+    <div style="text-align: center" class="wrapper">
+        {{ geographypage.text|safe }}
+        <br>
+        {{ geographypage.table|safe }}
+        <br>
+        <img width="70%" src="{{ geographypage.graph.url }}" alt="graph"/>
+    </div>
+{% endblock %}
