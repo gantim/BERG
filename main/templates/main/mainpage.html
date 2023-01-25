@@ -15,32 +15,40 @@
 </head>
 <body>
     <aside>
-        <nav class="top-menu">
-            <a class="navbar-logo" href="{% url 'home' %}"><img src="{% static 'main/img/default (1).png' %}"></a>
-            <a href="{% url 'home' %}"><span class="logo">BERG</span></a>
+        <nav class="topbar">
+            <div class="navbar-logo-top">
+                <a class="navbar-logo" href="{% url 'home' %}">
+                    <img alt="qwe" src="{% static 'main/img/default (1).png' %}">
+                </a>
+                <a href="{% url 'home' %}">
+                    <span class="logo">BERG</span>
+                </a>
+            </div>
             <ul class="menu-main">
-                <li><a href="{% url 'home' %}">Главная</a></li>
-                <li><a href="{% url 'info' %}">Востребованность</a></li>
-                <li><a href="{% url 'geography' %}">География</a></li>
-                <li><a href="{% url 'skills' %}">Навыки</a></li>
-                <li><a href="{% url 'vacancies' %}">Последние вакансии</a></li>
+                <li><a href="{% url 'home' %}">Главная</a></li><br>
+                <li><a href="{% url 'info' %}">Востребованность</a></li><br>
+                <li><a href="{% url 'geography' %}">География</a></li><br>
+                <li><a href="{% url 'skills' %}">Навыки</a></li><br>
+                <li><a href="{% url 'vacancies' %}">Последние вакансии</a></li><br>
             </ul>
         </nav>
     </aside>
-<div>
-    {% block content %}
-    {% endblock %}
-</div>
+<div class="main">
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
 
-<div class="content">
-<footer>
-    <div class="fut_menu">
-  <ul class="fut_main_menu">
-    <li><a>Немцов Кирилл Сергеевич</a></li>
-    <li><a>РИ-210945</a></li>
-  </ul>
-</div>
-</footer>
+    <div class="content">
+        <footer>
+            <div class="fut_menu">
+                <ul class="fut_main_menu">
+                    <li><a>Немцов Кирилл Сергеевич</a></li>
+                    <li><a>РИ-210945</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </div>
 
 </body>
